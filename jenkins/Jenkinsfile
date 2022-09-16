@@ -4,6 +4,9 @@ pipeline {
         label 'slave2'
         }
     }
+    tools {
+        maven 'maven354' 
+    }
     stages {
         stage('Build') {
             steps {
